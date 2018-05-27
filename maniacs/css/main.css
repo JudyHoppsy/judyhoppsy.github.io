@@ -1,0 +1,193 @@
+html {
+	font-size: 10px;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	margin: 0;
+	background-color: grey;
+	background-image: url(../img/man/Wiki-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: white;	
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+a:link {
+	color: #00c3ff;
+}
+
+a:visited {
+	color: #00c3ff;
+}
+
+a:hover {
+	color: yellow;
+}
+
+.top-nav {
+	font-family: 'Titan One', cursive;
+	border: 7px dashed #630000;
+	background-color: #010d30;
+	position: relative;
+}
+
+.top-nav_btn {
+	display: none;
+	width: 40px;
+	height: 40px;
+	border: none;
+	color: red;
+	background-color: transparent;
+	font-size: 30px;
+	position: absolute;
+	right: 50px;
+	top: -62px;
+}
+
+.top-nav_btn:hover {
+	cursor: pointer;
+}
+
+.top-nav_menu { 
+	list-style: none;
+	padding: 0px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.top-nav_menu li {
+	padding-right: 70px;
+}
+
+.top-nav_menu li:last-child {
+	padding-right: 0px;
+}
+
+.top-nav_menu a {
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: red;
+	font-weight: 700;
+}
+
+.top-nav_menu a::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 4px;
+	background-color: #e04802;
+	transform: translateY(1px) scale(0);
+}
+
+.top-nav_menu a:hover {
+	color:#01afe0;
+	
+}
+
+.top-nav_menu a:hover::after {
+	transform: translateY(25px) scale(1);
+}
+
+.title {
+	color: #c10101;
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Titan One', cursive;
+}
+
+.killers {
+	text-align: center;
+	color: #f7f7f7;
+	margin-top: 25px;
+	padding: 30px;
+	background: rgba(0,0,0,0.7);
+	font-family: 'Roboto Slab', serif;
+	
+}
+
+.killers a {
+	text-decoration: none;
+}
+
+.killers a:hover {
+	color: orange;
+}
+
+.killers img:hover {
+	border: 4px solid orange;
+}
+
+.killers h4 {
+	margin-top: 1px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.footer {
+	background-color: rgba(57, 61, 76, 1);
+	color: #e0670b;
+	padding: 25px 0;
+	margin-top: 50px;
+}
+
+.footer p {
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+.death {
+	margin-top: 50px;
+}
+
+.footer pre {
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.footer small {
+	font-size: 14px;
+	display: block;
+	line-height: 16px;
+}
+
+.footer_main {
+	text-align: center;
+}
+
+.footer ul {
+	padding: 0;
+	list-style: none;
+}
+
+.footer li {
+	line-height: 32px;
+}
+
+.footer-contacts {
+	text-align: right;
+
+	margin-bottom: 30px;
+}
+
+.footer-links {
+	text-align: right;
+}
+
+.footer-links li {
+	display: inline-block;
+	margin-left: 10px;
+}

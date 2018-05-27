@@ -1,0 +1,299 @@
+html {
+	font-size: 10px;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	margin: 0;
+	background-color: grey;
+	background-image: url(../img/man/Wiki-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: white;	
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+a:link {
+	color: #00c3ff;
+}
+
+a:visited {
+	color: #00c3ff;
+}
+
+a:hover {
+	color: yellow;
+}
+
+.top-nav {
+	font-family: 'Titan One', cursive;
+	border: 7px dashed #630000;
+	background-color: #010d30;
+	position: relative;
+}
+
+.top-nav_btn {
+	display: none;
+	width: 40px;
+	height: 40px;
+	border: none;
+	color: red;
+	background-color: transparent;
+	font-size: 30px;
+	position: absolute;
+	right: 50px;
+	top: -62px;
+}
+
+.top-nav_btn:hover {
+	cursor: pointer;
+}
+
+.top-nav_menu { 
+	list-style: none;
+	padding: 0px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.top-nav_menu li {
+	padding-right: 70px;
+}
+
+.top-nav_menu li:last-child {
+	padding-right: 0px;
+}
+
+.top-nav_menu a {
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: red;
+	font-weight: 700;
+}
+
+.top-nav_menu a::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 4px;
+	background-color: #e04802;
+	transform: translateY(1px) scale(0);
+	transition: all 0.2s;
+}
+
+.top-nav_menu a:hover {
+	color:#01afe0;
+	
+}
+
+.top-nav_menu a:hover::after {
+	transform: translateY(25px) scale(1);
+}
+
+.left-sidebar {
+	margin-top: 4rem; /* 40px */ 
+}
+
+.left-sidebar_btn {
+	display: none;
+	background-color: #4c1d05;
+	border: 7px ridge #9b6a01;
+	color: #d1ac08;
+	padding: 15px;
+	position: relative;
+	font-size: 22px;
+	font-weight: 600;
+	text-shadow: 1px 3px 2px black, 0 0 0em #00ff4c;
+}
+
+.left-sidebar_btn:hover {
+	cursor: pointer;
+}
+
+.left-sidebar_btn::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	right: 15px;
+	width: 15px;
+	height: 15px;
+	border-bottom: 2px solid yellow;
+	border-right: 2px solid yellow;
+	transform: rotate(45deg);
+
+}
+
+.left-sidebar_menu {
+	background-color: #4c1d05;
+	list-style: none;
+	padding: 0;
+	border: 7px ridge #9b6a01;
+}
+
+.left-sidebar_menu li {
+	transition: all 0.3s
+}
+	
+.left-sidebar_menu li:hover {
+	background-color: #2b0138;
+}
+
+.left-sidebar_menu li:hover a {
+	color: white;
+}
+
+.left-sidebar_menu a {
+	text-shadow: 1px 3px 2px black, 0 0 0em #00ff4c;
+	text-decoration: none;
+	color: #d1ac08;
+	font-size: 22px;
+	font-weight: 600;
+	padding: 15px 10px;
+	display: block;
+}
+
+.left-sidebar_object {
+	margin-top: 30px;
+	background-color: #190e01;
+	border: 3px ridge #ffad00;
+} 
+
+.left-sidebar_object-description {
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	padding: 15px;
+}
+
+.left-sidebar_object-description h3 {
+	color: yellow;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.content {
+	margin-top: 40px;
+	padding: 1px;
+	background: rgba(0,0,0,0.6);
+	border: 10px outset rgba(50, 231, 255, 0.3) 
+}
+
+.content h1 {
+	letter-spacing: 2px;
+	font-family: 'Titan One', cursive;
+	font-size: 70px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	color: #a50909;
+}
+
+.content h2 {
+	font-family: 'Bitter', serif;
+	letter-spacing: 1px;
+	color: white;
+	font-size: 22px;
+
+}
+
+.info {
+	color: #f7f7f7;
+	margin-top: 15px;
+	padding-left: 20px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-right: 20px;
+	background: rgba(0,0,0,0.7);
+	border: 10px double rgba(252, 0, 193, 0.3);
+	font-size: 22px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.gallery {
+	background-color: rgba(0,0,0,0.6);
+	margin-top: 50px;
+	font-family: 'Titan One', cursive;
+}
+
+.gallery-block {
+	
+	height: 360px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 20px ridge rgba(252, 0, 193, 0.0);
+}
+
+.gallery h2 {
+	background-color: rgba(0,0,0,0.5);
+	border: 5px dotted red;
+	font-size: 40px;
+	color: #a50909;
+}
+
+.footer {
+	background-color: rgba(57, 61, 76, 1);
+	color: #e0670b;
+	padding: 25px 0;
+	margin-top: 50px;
+}
+
+.footer p {
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+.death {
+	margin-top: 50px;
+}
+
+.footer pre {
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.footer small {
+	font-size: 14px;
+	display: block;
+	line-height: 16px;
+}
+
+.footer_main {
+	text-align: center;
+}
+
+.footer ul {
+	padding: 0;
+	list-style: none;
+}
+
+.footer li {
+	line-height: 32px;
+}
+
+.footer-contacts {
+	text-align: right;
+
+	margin-bottom: 30px;
+}
+
+.footer-links {
+	text-align: right;
+}
+
+.footer-links li {
+	display: inline-block;
+	margin-left: 10px;
+}
